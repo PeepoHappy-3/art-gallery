@@ -1,0 +1,26 @@
+.select-placeholder{
+	//position: absolute;
+	display: block;
+	opacity: 1;	
+	transform: translate(5%, -50%);
+	width: 40%;
+	transition: all .2s ease-in-out;
+	z-index: 1;
+	pointer-events: none;
+	line-height: 1;	
+	position: absolute;
+	top:50%;
+	left:0;
+
+//	max-width:45%;
+	&_active{
+		//left:102%;		
+		transform: translate(-0%, -270%);	
+		opacity:1;
+	}
+	&_inactive{		
+		//transform: translate(-105%);
+		z-index: 4;
+		color: #8a8686;		
+	}
+}

@@ -1,0 +1,21 @@
+@import '../../global.scss';
+
+.submit{
+	background: $color_aqua;
+	width:100%;
+	height:50px;
+	color:#ffffff;
+	transition: opacity .2s ease-in-out;
+	&_pending{
+		background: url('../../assets/icons/loading.gif'), transparent;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size:100px 30px;
+	}
+	&:disabled{
+		background: transparent;
+	}
+	&:hover{
+		opacity: .85;
+	}
+}

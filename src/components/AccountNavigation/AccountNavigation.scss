@@ -1,0 +1,27 @@
+@import '../../global.scss';
+
+.account-navigation{
+		display: flex;
+		gap:5px;
+		width: 100%;
+		border-bottom:$color_aqua_sub 2px solid;	
+		margin: 0 0 10px;
+		&__link{
+		width:200px;
+		height:36px;
+		display: flex;
+		align-items: center;
+		justify-content: center;	
+		font-size: 18px;
+		line-height: 1;
+		transition: all .2s ease-in-out;
+		padding: 0 10px;
+		&:hover{
+			opacity: .65;
+		}
+		&.active{
+			background: $color_aqua;
+			color: #ffffff;
+		}
+	}
+}

@@ -1,0 +1,63 @@
+$color_aqua: linear-gradient(90deg, rgb(68, 189, 189) 22%, rgb(79, 203, 158) 51%, rgb(68, 189, 189) 78%);
+$color_aqua_sub: rgb(68, 189, 189);
+$color_aqua_sub_half: rgba(68, 189, 189, 0.2);
+$color_bg_sub: rgb(40 49 62);
+$color_bg_main:rgb(24 31 42 );	
+$color_bg_main_half: rgba(24,31,42,.9);
+
+html{
+	scroll-behavior: smooth;
+}
+body {
+    @apply text-[#ffffff] flex flex-col;
+		height:100vh;
+    background-image: url('./assets/images/background.png');
+    background-size: 100% auto;
+    background-attachment: fixed;
+
+		-ms-overflow-style: none;  /* IE and Edge */
+		scrollbar-width: none;  /* Firefox */
+		&::-webkit-scrollbar{
+			display: none;
+		}
+}
+
+input{
+	
+	&:focus{
+		outline:none;
+	}
+}
+.main {
+    @apply container basis-[100%] bg-[#181f2a] flex-auto py-[50px];
+}
+
+.swiper-button-disabled {
+    visibility: hidden;
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    z-index: 90;
+    font-size: 20px;
+    cursor: pointer;	
+		@apply animate-pulse
+}
+
+.next {
+    right: -40px;
+    transform: translateY(-50%);			
+}
+.prev {
+    left: -40px;  
+		transform: rotate(180deg) translateY(50%);  	
+}
+
+.body-blocked{
+	overflow: hidden;
+	margin-left: -19px;
+}
+
+

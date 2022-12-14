@@ -1,0 +1,21 @@
+@import '../../global.scss';
+
+.form{	
+	overflow-y: scroll;
+	-ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+	&::-webkit-scrollbar{
+		display: none;
+	}
+	&__submit{
+		transition: opacity .2s ease-in-out;
+		background: $color_aqua;
+		&:disabled{
+			border: 1px solid $color_bg_sub;
+			background: $color_bg_main;
+			&:hover{
+				opacity: 1;
+			}
+		}
+	}
+}

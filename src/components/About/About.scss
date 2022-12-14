@@ -1,0 +1,10 @@
+.about {
+    &__button {
+        background: linear-gradient(90deg, rgba(68, 189, 189, 1) 22%, rgba(79, 203, 158, 1) 51%, rgba(68, 189, 189, 1) 78%);
+        @apply h-[75px] w-full text-[30px] py-[5px] flex items-center justify-center;
+        transition: opacity .2s ease-in-out;
+        &:hover {
+            opacity: .65;
+        }
+    }
+}

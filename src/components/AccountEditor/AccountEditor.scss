@@ -1,0 +1,57 @@
+@import '../../global.scss';
+
+.editor{
+	display: flex;
+	gap:5px;	
+	&__title{
+		color:#708090;
+	}
+	&__value{
+		color: #ffffff;
+	}
+	&__column{
+		display: flex;
+		flex-direction: column;
+		row-gap: 5px;
+	}
+	&__error{
+		color:#aa0000;
+		line-height: 1;
+		margin:0 0 5px;
+	}
+	&__form{
+		display: flex;
+		align-items: flex-start;
+		padding:0;
+		margin:0;
+		gap:5px;
+	}
+	&__button{
+		transition: all .2s ease-in-out;
+		&:hover{
+			opacity: .75;
+		}
+		&_save{
+			color: $color_aqua_sub;
+			&:disabled{
+				color: gray;
+				&:hover{
+					opacity: 1;
+				}
+			}
+		}
+		&_cancel{
+			color:#ff0000;
+		}
+		&_edit{
+			color: $color_aqua_sub;
+		}
+	}
+	&__input{
+		border-radius: 5px;
+		height: 30px;
+		width:400px;
+		color:#000000;
+		padding:0 5px;
+	}
+}

@@ -1,0 +1,14 @@
+.modal{
+	//transition: all .2s ease-in-out;	
+	-ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+	&__overlay{
+		cursor: pointer;	
+		&:hover~.modal__button{
+			opacity: .65;
+		}
+	}
+}
+.modal::-webkit-scrollbar{
+	display: none;
+}

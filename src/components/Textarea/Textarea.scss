@@ -1,0 +1,19 @@
+.textarea-placeholder{		
+	opacity: 1;	
+	transform: translate(5%,-50%);
+
+	transition: all .2s ease-in-out;
+	align-self: baseline;
+	line-height: 1;
+	padding-top:10px;
+	position: absolute;
+	top:5%;
+	left:0;
+	&_active{				
+		transform: translate(0%, -150%);	
+	}
+	&_inactive{	
+		z-index: 49;
+		color: #8a8686;		
+	}
+}

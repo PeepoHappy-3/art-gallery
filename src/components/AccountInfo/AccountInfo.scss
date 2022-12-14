@@ -1,0 +1,35 @@
+@import '../../global.scss';
+
+.account{
+	&__title{
+		font-size: 25px;
+		line-height: 1;
+		margin: 0 0 10px 0;
+	}
+	&__subtitle{
+		font-size: 20px;
+	}
+	&__inner{
+		display: flex;
+		//gap:20px;
+		align-items: flex-start;
+		background-color: $color_bg_sub;
+		border-radius: 5px;
+		padding: 20px 50px;
+	}
+	&__img-wrap{
+		max-width: 100px;
+		overflow: hidden;
+		border-radius: 50%;
+		border: $color_aqua_sub 2px solid;
+		margin: 0 50px 0 0;
+	}
+	&__body{
+		padding: 10px 0 0 0;
+		display: grid;
+		grid-template-columns: repeat(1,1fr);
+		row-gap: 15px;
+		column-gap:50px;
+		width:60%;
+	}
+}

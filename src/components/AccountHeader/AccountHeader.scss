@@ -1,0 +1,43 @@
+@import '../../global.scss';
+
+.account-header{	
+	display: flex;
+	//flex-direction: column;
+	gap:10px;
+	align-items: center;
+	&__row{
+		display: flex;
+		gap:10px;	
+	}
+	&__column{
+		display: flex;
+		flex-direction: column;
+	}
+	&__name{
+		color: #ffffff !important;
+		transition: all .2s ease-in-out;
+		margin:0;
+		&:hover{
+			opacity: .85;
+		}
+	}
+	&__img-wrap{
+		max-width:40px;
+		border-radius: 50%;
+		border: $color_aqua_sub 1px solid;
+		overflow: hidden;	
+	}
+	&__link{
+		color: $color_aqua_sub;
+		transition: all .2s ease-in-out;
+		text-decoration: none;
+		margin:0;
+		font-size:14px;
+		&.active{
+			text-decoration: underline;
+		}
+		&:hover{
+			text-decoration: underline;
+		}
+	}
+}

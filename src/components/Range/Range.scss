@@ -1,0 +1,41 @@
+@import '../../global.scss';
+.range{
+	-webkit-appearance: none;
+	height: 7px;
+	background: #ffffff;
+	border-radius: 5px;
+	background-repeat: no-repeat;
+	&::-webkit-slider-thumb{
+		-webkit-appearance: none;
+		border: 1px solid $color_bg_sub;
+		height: 16px;
+		width: 16px;
+		border-radius: 50%;
+		background: $color_aqua;
+		cursor: pointer;
+		margin-top: -5px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+		box-shadow: 1px 1px 1px $color_bg_main, 0px 0px 1px $color_bg_sub; /* Add cool effects to your sliders! */
+	}
+	 &::-moz-range-thumb{	
+		height: 15px;
+		width: 15px;
+		border-radius: 50%;
+		background: $color_aqua;
+		cursor: pointer;
+		box-shadow: 0 0 2px 0 #555;
+	}
+	&::-webkit-slider-runnable-track{
+		background:#ffffff;
+		height:6px;		
+		border-radius: 5px;
+		border:none;
+		padding:0;
+	}
+	&::-moz-range-track{
+		background:#ffffff;
+		height:6px;		
+		border-radius: 5px;
+		border:none;
+		padding:0;
+	}
+}

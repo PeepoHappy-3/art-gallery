@@ -1,0 +1,16 @@
+.forbiden{
+	width:100%;
+	display: flex;
+	justify-content: center;
+	&__title{
+		font-size: 25px;
+	}
+	&__link{		
+		color:rgb(11, 173, 194);
+		transition: all .2s ease-in-out;
+		text-decoration: underline;
+		&:hover{
+			opacity: .85;
+		}
+	}
+}
